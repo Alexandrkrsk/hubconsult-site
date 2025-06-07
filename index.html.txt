@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HubConsult — Бизнес-консалтинг</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f6f6f6;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #003366;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      background-color: #fff;
+    }
+    h1, h2 {
+      color: #003366;
+    }
+    form {
+      margin-top: 20px;
+    }
+    input, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+    button {
+      background-color: #003366;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #eee;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>HubConsult</h1>
+    <p>Профессиональные консультации и поддержка вашего бизнеса</p>
+  </header>
+
+  <div class="container">
+    <h2>О компании</h2>
+    <p>
+      Мы помогаем предпринимателям находить решения, оптимизировать процессы и добиваться успеха. 
+      Наши эксперты работают с малым и средним бизнесом по всей России.
+    </p>
+
+    <h2>Оставьте заявку</h2>
+    <form name="contact" method="POST" data-netlify="true">
+      <input type="text" name="name" placeholder="Ваше имя" required />
+      <input type="email" name="email" placeholder="Ваш email" required />
+      <textarea name="message" rows="5" placeholder="Ваш запрос или вопрос" required></textarea>
+      <button type="submit">Отправить</button>
+    </form>
+
+    <h2>Контакты</h2>
+    <p>Email: info@hubconsult.ru</p>
+    <p>Телефон: +7 (900) 000-00-00</p>
+  </div>
+
+  <footer>
+    &copy; 2025 HubConsult. Все права защищены.
+  </footer>
+
+</body>
+</html>
