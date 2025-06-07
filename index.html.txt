@@ -1,85 +1,98 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HubConsult � ������-����������</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f6f6f6;
-      margin: 0;
-      padding: 0;
+
+    .services, .blog, .ads {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
     }
-    header {
-      background-color: #003366;
-      color: #fff;
+
+    .card {
+      background: white;
       padding: 20px;
-      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-      background-color: #fff;
-    }
-    h1, h2 {
-      color: #003366;
-    }
-    form {
-      margin-top: 20px;
-    }
-    input, textarea, button {
-      width: 100%;
-      padding: 10px;
-      margin: 8px 0;
-      box-sizing: border-box;
-      font-size: 16px;
-    }
-    button {
-      background-color: #003366;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-    }
+
     footer {
-      background-color: #eee;
       text-align: center;
-      padding: 10px;
-      font-size: 14px;
+      padding: 20px;
+      background: #222;
+      color: #aaa;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
     }
   </style>
 </head>
 <body>
-
   <header>
     <h1>HubConsult</h1>
-    <p>���������������� ������������ � ��������� ������ �������</p>
+    <p>Юридические, бухгалтерские и маркетинговые услуги с использованием современных технологий</p>
   </header>
 
-  <div class="container">
-    <h2>� ��������</h2>
-    <p>
-      �� �������� ���������������� �������� �������, �������������� �������� � ���������� ������. 
-      ���� �������� �������� � ����� � ������� �������� �� ���� ������.
-    </p>
+  <nav>
+    <a href="#services">Услуги</a>
+    <a href="#blog">Блог</a>
+    <a href="#ads">Реклама</a>
+    <a href="#contact">Контакты</a>
+  </nav>
 
-    <h2>�������� ������</h2>
-    <form name="contact" method="POST" data-netlify="true">
-      <input type="text" name="name" placeholder="���� ���" required />
-      <input type="email" name="email" placeholder="��� email" required />
-      <textarea name="message" rows="5" placeholder="��� ������ ��� ������" required></textarea>
-      <button type="submit">���������</button>
+  <section id="services">
+    <h2>Наши услуги</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Юридические услуги</h3>
+        <p>Правовое сопровождение бизнеса, составление договоров, защита интересов в суде.</p>
+      </div>
+      <div class="card">
+        <h3>Бухгалтерские услуги</h3>
+        <p>Ведение бухгалтерии, отчётность, налоговое планирование и консалтинг.</p>
+      </div>
+      <div class="card">
+        <h3>Маркетинговые услуги</h3>
+        <p>Продвижение, реклама, создание контента и аналитика кампаний.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog">
+    <h2>Блог</h2>
+    <div class="blog">
+      <div class="card">
+        <h3>Как автоматизировать бухгалтерию</h3>
+        <p>Советы по внедрению ИИ и современных сервисов.</p>
+      </div>
+      <div class="card">
+        <h3>Юридические риски в 2025 году</h3>
+        <p>Что нужно знать владельцу бизнеса?</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="ads">
+    <h2>Партнёрская реклама</h2>
+    <div class="ads">
+      <div class="card">
+        <h3>Разместите здесь свою рекламу</h3>
+        <p>Мы открыты к сотрудничеству! Напишите нам.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Связаться с нами</h2>
+    <form>
+      <input type="text" name="name" placeholder="Ваше имя" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message" placeholder="Ваше сообщение" rows="5" required></textarea>
+      <button type="submit">Отправить</button>
     </form>
-
-    <h2>��������</h2>
-    <p>Email: info@hubconsult.ru</p>
-    <p>�������: +7 (900) 000-00-00</p>
-  </div>
+  </section>
 
   <footer>
-    &copy; 2025 HubConsult. ��� ����� ��������.
+    &copy; 2025 HubConsult — Все права защищены
   </footer>
-
 </body>
 </html>
