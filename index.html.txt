@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HubConsult — Юридические, Бухгалтерские и Маркетинговые услуги</title>
+  <style>
+    :root {
+      --primary-color: #007bff;
+      --accent-color: #ff7a00;
+      --bg-color: #f4f4f4;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg-color);
+      color: #333;
+    }
+
+    header {
+      background: var(--primary-color);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #0056b3;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .services, .blog, .ads {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: #aaa;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HubConsult</h1>
+    <p>Юридические, бухгалтерские и маркетинговые услуги с использованием современных технологий</p>
+  </header>
+
+  <nav>
+    <a href="#services">Услуги</a>
+    <a href="#blog">Блог</a>
+    <a href="#ads">Реклама</a>
+    <a href="#contact">Контакты</a>
+  </nav>
+
+  <section id="services">
+    <h2>Наши услуги</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Юридические услуги</h3>
+        <p>Правовое сопровождение бизнеса, составление договоров, защита интересов в суде.</p>
+      </div>
+      <div class="card">
+        <h3>Бухгалтерские услуги</h3>
+        <p>Ведение бухгалтерии, отчётность, налоговое планирование и консалтинг.</p>
+      </div>
+      <div class="card">
+        <h3>Маркетинговые услуги</h3>
+        <p>Продвижение, реклама, создание контента и аналитика кампаний.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog">
+    <h2>Блог</h2>
+    <div class="blog">
+      <div class="card">
+        <h3>Как автоматизировать бухгалтерию</h3>
+        <p>Советы по внедрению ИИ и современных сервисов.</p>
+      </div>
+      <div class="card">
+        <h3>Юридические риски в 2025 году</h3>
+        <p>Что нужно знать владельцу бизнеса?</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="ads">
+    <h2>Партнёрская реклама</h2>
+    <div class="ads">
+      <div class="card">
+        <h3>Разместите здесь свою рекламу</h3>
+        <p>Мы открыты к сотрудничеству! Напишите нам.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Связаться с нами</h2>
+    <form>
+      <input type="text" name="name" placeholder="Ваше имя" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message" placeholder="Ваше сообщение" rows="5" required></textarea>
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 HubConsult — Все права защищены
+  </footer>
+</body>
+</html>
